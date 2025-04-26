@@ -1,0 +1,454 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte usada no texto */
+    margin: 0; /* Espaço externo zerado */
+    background-color: #FFF8E1; /* Cor de fundo: bege claro */
+  }
+  
+  .menu {
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 10px 20px; /* Espaço interno */
+    background-color: #FFFFFF; /* Cor de fundo: branco */
+    border-bottom: 1px solid #e0e0e0; /* Borda inferior cinza-clara */
+  }
+  
+  .logo {
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    color: #F8BBD0; /* Cor do texto: rosa suave */
+  }
+  
+  .links {
+    display: flex; /* Alinha os itens na horizontal */
+    align-items: center; /* Alinha verticalmente ao centro */
+  }
+  
+  .link-item {
+    margin-left: 20px; /* Espaço à esquerda de cada link */
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor do texto: preto */
+  }
+  
+  .botao-agendar {
+    background-color: #FFCA28; /* Cor de fundo: dourado brilhante */
+    color: #FFFFFF; /* Cor do texto: branco */
+    border: none; /* Sem borda */
+    padding: 5px 15px; /* Espaço interno */
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    margin-left: 20px; /* Espaço à esquerda */
+    transition: transform 0.3s ease; /* Animação suave para escala */
+  }
+  
+  .botao-agendar:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+  }
+  
+  .principal {
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: space-between; /* Espaço entre os itens */
+    padding: 50px 100px; /* Espaço interno */
+    background-color: #FFFFFF; /* Cor de fundo: branco */
+  }
+  
+  .texto {
+    width: 50%; /* Largura de 50% */
+  }
+  
+  h1 {
+    font-size: 48px; /* Tamanho da fonte */
+    color: black; /* Cor do texto: preto */
+    line-height: 1.2; /* Espaço entre linhas */
+  }
+  
+  p {
+    color: #B0BEC5; /* Cor do texto: cinza suave */
+    margin: 20px 0; /* Espaço externo (cima e baixo) */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  .botao-chamada {
+    background-color: #F8BBD0; /* Cor de fundo: rosa suave */
+    color: #FFFFFF; /* Cor do texto: branco */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaço interno */
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: transform 0.3s ease; /* Animação suave para escala */
+  }
+  
+  .botao-chamada:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+  }
+  
+  .imagem {
+    width: 45%; /* Largura de 45% */
+  }
+  
+  .galeria {
+    display: flex; /* Alinha as imagens na horizontal */
+    gap: 10px; /* Espaço entre as imagens */
+    overflow: hidden; /* Esconde o excesso */
+  }
+  
+  .imagem-galeria {
+    width: 100%; /* Largura total */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+  }
+  
+  /* Animação de fade-in para as imagens */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .motivos {
+    padding: 50px 100px; /* Espaço interno */
+    text-align: center; /* Texto centralizado */
+    background-color: #FFF8E1; /* Cor de fundo: bege claro */
+  }
+  
+  h2 {
+    font-size: 36px; /* Tamanho da fonte */
+    color: black; /* Cor do texto: preto */
+    margin-bottom: 30px; /* Espaço abaixo */
+  }
+  
+  .caixas {
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+  
+  .caixa {
+    width: 30%; /* Largura de 30% */
+    background-color: #FFFFFF; /* Cor de fundo: branco */
+    border: 1px solid #e0e0e0; /* Borda: cinza-claro */
+    padding: 0; /* Espaço interno zerado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease; /* Animação suave para escala */
+  }
+  
+  .caixa:hover {
+    transform: scale(1.03); /* Aumenta levemente ao passar o mouse */
+  }
+  
+  .caixa-imagem {
+    width: 100%; /* Largura total */
+    height: 150px; /* Altura fixa */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+    border-top-left-radius: 5px; /* Bordas arredondadas no topo */
+    border-top-right-radius: 5px; /* Bordas arredondadas no topo */
+  }
+  
+  h3 {
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto: preto */
+    margin: 15px; /* Espaço externo */
+  }
+  
+  .caixa p {
+    margin: 0 15px 15px 15px; /* Espaço externo */
+    color: #B0BEC5; /* Cor do texto: cinza suave */
+    font-size: 14px; /* Tamanho da fonte */
+  }
+  
+  .link-saiba-mais {
+    display: block; /* Ocupa a linha inteira */
+    margin: 15px; /* Espaço externo */
+    color: #F8BBD0; /* Cor do texto: rosa suave */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Animação suave para a cor */
+  }
+  
+  .link-saiba-mais:hover {
+    color: #FFCA28; /* Muda para dourado ao passar o mouse */
+  }
+  
+  /* Estilos para a seção de agendamento */
+  .agendamento {
+    padding: 50px 100px; /* Espaço interno */
+    background-color: #FFF8E1; /* Cor de fundo: bege claro */
+    text-align: center; /* Texto centralizado */
+  }
+  
+  .form-agendamento {
+    display: flex; /* Alinha os itens na horizontal */
+    flex-direction: column; /* Empilha os itens */
+    gap: 15px; /* Espaço entre os itens */
+    max-width: 400px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+  }
+  
+  .form-agendamento input {
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #e0e0e0; /* Borda cinza-clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  #botao-agendar-horario, #autenticar-google {
+    background-color: #FFCA28; /* Cor de fundo: dourado brilhante */
+    color: #FFFFFF; /* Cor do texto: branco */
+    border: none; /* Sem borda */
+    padding: 10px; /* Espaço interno */
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: transform 0.3s ease; /* Animação suave para escala */
+  }
+  
+  #botao-agendar-horario:hover, #autenticar-google:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+  }
+  
+  /* Estilos para a seção de agenda */
+  .agenda {
+    padding: 50px 100px; /* Espaço interno */
+    background-color: #FFFFFF; /* Cor de fundo: branco */
+    text-align: center; /* Texto centralizado */
+  }
+  
+  .proximo-cliente {
+    border: 1px solid #e0e0e0; /* Borda cinza-clara */
+    padding: 20px; /* Espaço interno */
+    margin-bottom: 30px; /* Espaço abaixo */
+    border-radius: 5px; /* Bordas arredondadas */
+  }
+  
+  .cliente-info {
+    display: flex; /* Alinha os itens na horizontal */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 15px; /* Espaço abaixo */
+  }
+  
+  .icone-cliente {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço à direita */
+  }
+  
+  .nome-cliente {
+    font-weight: bold; /* Texto em negrito */
+    margin-right: 15px; /* Espaço à direita */
+  }
+  
+  .data-hora {
+    color: #B0BEC5; /* Cor do texto: cinza suave */
+  }
+  
+  .botoes-cliente {
+    display: flex; /* Alinha os botões na horizontal */
+    gap: 10px; /* Espaço entre os botões */
+    justify-content: center; /* Centraliza os botões */
+  }
+  
+  .botao-reagendar, .botao-adicionar-servico, .botao-adicionar-nota {
+    background-color: #F8BBD0; /* Cor de fundo: rosa suave */
+    color: #FFFFFF; /* Cor do texto: branco */
+    border: none; /* Sem borda */
+    padding: 5px 15px; /* Espaço interno */
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    border-radius: 3px; /* Bordas arredondadas */
+    transition: transform 0.3s ease; /* Animação suave para escala */
+  }
+  
+  .botao-reagendar:hover, .botao-adicionar-servico:hover, .botao-adicionar-nota:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+  }
+  
+  .lista-agendamentos {
+    border: 1px solid #e0e0e0; /* Borda cinza-clara */
+    padding: 20px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+  }
+  
+  .agendamento {
+    display: flex; /* Alinha os itens na horizontal */
+    justify-content: space-between; /* Espaço entre os itens */
+    padding: 10px; /* Espaço interno */
+    border-bottom: 1px solid #f0f0f0; /* Borda inferior leve */
+    opacity: 0; /* Inicialmente invisível para animação */
+    animation: slideIn 0.5s ease forwards; /* Animação de entrada */
+  }
+  
+  .agendamento.destacado {
+    background-color: #F8BBD0; /* Cor de fundo: rosa suave (para destacar) */
+  }
+  
+  .agendamento:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+  }
+  
+  .hora {
+    font-weight: bold; /* Texto em negrito */
+    color: black; /* Cor do texto: preto */
+  }
+  
+  .cliente {
+    color: #B0BEC5; /* Cor do texto: cinza suave */
+  }
+  
+  .profissional {
+    color: #FFCA28; /* Cor do texto: dourado brilhante */
+  }
+  
+  /* Animação de entrada para os agendamentos */
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Estilos para o dashboard */
+  .dashboard {
+    padding: 50px 100px; /* Espaço interno */
+    background-color: #FFF8E1; /* Cor de fundo: bege claro */
+    text-align: center; /* Texto centralizado */
+  }
+  
+  .dashboard-info {
+    border: 1px solid #e0e0e0; /* Borda cinza-clara */
+    padding: 20px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+  }
+  
+  #horarios-ocupados {
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove padding */
+  }
+  
+  #horarios-ocupados li {
+    padding: 5px 0; /* Espaço interno */
+    color: #B0BEC5; /* Cor do texto: cinza suave */
+  }
+  
+  #grafico-agendamentos {
+    margin-top: 20px; /* Espaço acima */
+    max-width: 100%; /* Largura máxima */
+  }
+  
+  /* Media Queries para dispositivos móveis */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column; /* Empilha os itens verticalmente */
+      align-items: flex-start; /* Alinha à esquerda */
+      padding: 10px; /* Reduz o espaço interno */
+    }
+  
+    .logo {
+      font-size: 20px; /* Reduz o tamanho da fonte */
+      margin-bottom: 10px; /* Espaço abaixo */
+    }
+  
+    .links {
+      flex-direction: column; /* Empilha os links */
+      width: 100%; /* Largura total */
+    }
+  
+    .link-item, .botao-agendar {
+      margin: 5px 0; /* Espaço entre os itens */
+      width: 100%; /* Largura total */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .principal {
+      flex-direction: column; /* Empilha texto e imagem */
+      padding: 20px; /* Reduz o espaço interno */
+    }
+  
+    .texto, .imagem {
+      width: 100%; /* Largura total */
+    }
+  
+    h1 {
+      font-size: 32px; /* Reduz o tamanho do título */
+    }
+  
+    p {
+      font-size: 14px; /* Reduz o tamanho do texto */
+    }
+  
+    .botao-chamada {
+      padding: 8px 16px; /* Reduz o tamanho do botão */
+      font-size: 14px; /* Reduz a fonte do botão */
+    }
+  
+    .galeria {
+      flex-direction: column; /* Empilha as imagens */
+      gap: 15px; /* Espaço entre as imagens */
+    }
+  
+    .imagem-galeria {
+      height: 200px; /* Reduz a altura das imagens */
+    }
+  
+    .motivos {
+      padding: 20px; /* Reduz o espaço interno */
+    }
+  
+    h2 {
+      font-size: 28px; /* Reduz o tamanho do título */
+    }
+  
+    .caixas {
+      flex-direction: column; /* Empilha as caixas */
+    }
+  
+    .caixa {
+      width: 100%; /* Largura total */
+      margin-bottom: 20px; /* Espaço entre as caixas */
+    }
+  
+    .caixa-imagem {
+      height: 100px; /* Reduz a altura da imagem */
+    }
+  
+    .agendamento {
+      padding: 20px; /* Reduz o espaço interno */
+    }
+  
+    .form-agendamento {
+      padding: 15px; /* Reduz o espaço interno */
+    }
+  
+    .cliente-info {
+      flex-direction: column; /* Empilha os itens */
+      align-items: flex-start; /* Alinha à esquerda */
+    }
+  
+    .nome-cliente {
+      margin-bottom: 5px; /* Espaço abaixo */
+    }
+  
+    .botoes-cliente {
+      flex-direction: column; /* Empilha os botões */
+      gap: 5px; /* Reduz o espaço entre os botões */
+    }
+  
+    .botao-reagendar, .botao-adicionar-servico, .botao-adicionar-nota {
+      width: 100%; /* Largura total */
+      padding: 8px; /* Reduz o espaço interno */
+    }
+  
+    .lista-agendamentos {
+      padding: 15px; /* Reduz o espaço interno */
+    }
+  
+    .agendamento {
+      flex-direction: column; /* Empilha os itens */
+      align-items: flex-start; /* Alinha à esquerda */
+      padding: 8px; /* Reduz o espaço interno */
+    }
+  
+    .hora, .cliente, .profissional {
+      margin-bottom: 5px; /* Espaço entre os itens */
+    }
+  
+    .dashboard {
+      padding: 20px; /* Reduz o espaço interno */
+    }
+  
+    #grafico-agendamentos {
+      height: 150px; /* Reduz a altura do gráfico */
+    }
+  }
