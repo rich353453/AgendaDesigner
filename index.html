@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design de Sobrancelhas - Agende Seu Horário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google API Client Library -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Menu no topo -->
+    <nav class="menu">
+      <div class="logo">Sobrancelhas Perfeitas</div>
+      <div class="links">
+        <a class="link-item" href="#">Home</a>
+        <a class="link-item" href="#">Serviços</a>
+        <a class="link-item" href="#">Galeria</a>
+        <a class="link-item" href="#">Contato</a>
+        <button class="botao-agendar">Agendar</button>
+      </div>
+    </nav>
+
+    <!-- Seção principal -->
+    <section class="principal">
+      <div class="texto">
+        <h1>Transforme Suas Sobrancelhas</h1>
+        <p>Agende agora e realce sua beleza com nossas técnicas exclusivas.</p>
+        <button class="botao-chamada">Ver Pacotes</button>
+      </div>
+      <div class="imagem">
+        <!-- Galeria de imagens -->
+        <div class="galeria">
+          <img src="https://images.unsplash.com/photo-1608248543803-5a93c3a7cc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Design de Sobrancelhas" class="imagem-galeria">
+          <img src="https://images.unsplash.com/photo-1612349317154-e8f4e6ae83fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Peeling Facial" class="imagem-galeria">
+          <img src="https://images.unsplash.com/photo-1599669454815-5c6b2b2d2d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Cuidados com a Pele" class="imagem-galeria">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção "Por que nos escolher" -->
+    <section class="motivos">
+      <h2>Por que Escolher Nossos Serviços</h2>
+      <div class="caixas">
+        <div class="caixa">
+          <img src="https://images.unsplash.com/photo-1608248543803-5a93c3a7cc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Profissionais Experientes" class="caixa-imagem">
+          <h3>Profissionais Experientes</h3>
+          <p>Nossa equipe é treinada para oferecer o melhor resultado.</p>
+          <a class="link-saiba-mais" href="#">Saiba Mais</a>
+        </div>
+        <div class="caixa">
+          <img src="https://images.unsplash.com/photo-1612349317154-e8f4e6ae83fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Técnicas Modernas" class="caixa-imagem">
+          <h3>Técnicas Modernas</h3>
+          <p>Usamos as melhores técnicas para sobrancelhas perfeitas.</p>
+          <a class="link-saiba-mais" href="#">Saiba Mais</a>
+        </div>
+        <div class="caixa">
+          <img src="https://images.unsplash.com/photo-1599669454815-5c6b2b2d2d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Ambiente Acolhedor" class="caixa-imagem">
+          <h3>Ambiente Acolhedor</h3>
+          <p>Relaxe em um espaço feito para seu conforto.</p>
+          <a class="link-saiba-mais" href="#">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de agendamento -->
+    <section class="agendamento">
+      <h2>Agendar um Horário</h2>
+      <div class="form-agendamento">
+        <input type="text" id="nome-cliente" placeholder="Seu Nome" required>
+        <input type="datetime-local" id="data-horario" required>
+        <input type="text" id="servico" placeholder="Serviço (ex.: Design de Sobrancelhas)" required>
+        <button id="botao-agendar-horario">Marcar Horário</button>
+        <button id="autenticar-google">Autenticar com Google</button>
+      </div>
+    </section>
+
+    <!-- Seção de agenda -->
+    <section class="agenda">
+      <h2>Agenda de Gabrielly Xavier</h2>
+      <div class="proximo-cliente">
+        <h3>Próximo Cliente</h3>
+        <div class="cliente-info">
+          <span class="icone-cliente">👤</span>
+          <span class="nome-cliente">Ana S.</span>
+          <span class="data-hora">Seg, 28 Abr, 13:00</span>
+        </div>
+        <div class="botoes-cliente">
+          <button class="botao-reagendar">Reagendar</button>
+          <button class="botao-adicionar-servico">Adicionar Serviço</button>
+          <button class="botao-adicionar-nota">Adicionar Nota</button>
+        </div>
+      </div>
+      <div class="lista-agendamentos" id="lista-agendamentos">
+        <h3>Agendamentos do Dia - 28 de Abril</h3>
+        <!-- Agendamentos serão adicionados dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- Seção de dashboard -->
+    <section class="dashboard">
+      <h2>Dashboard da Agenda</h2>
+      <div class="dashboard-info">
+        <p><strong>Total de Agendamentos Hoje:</strong> <span id="total-agendamentos">0</span></p>
+        <p><strong>Clientes Atendidos na Semana:</strong> <span id="clientes-semana">0</span></p>
+        <p><strong>Horários Ocupados:</strong></p>
+        <ul id="horarios-ocupados">
+          <!-- Horários serão adicionados dinamicamente via JS -->
+        </ul>
+        <p><strong>Distribuição de Agendamentos por Horário:</strong></p>
+        <canvas id="grafico-agendamentos" width="400" height="200"></canvas>
+      </div>
+    </section>
+
+    <script src="comportamento.js"></script>
+  </body>
+</html>
